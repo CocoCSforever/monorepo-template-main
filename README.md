@@ -19,4 +19,4 @@ One awesome thing about having all of your code in Github, is that you can share
 1. Share a link to your code (Don't worry, the repositories are private, so other students cannot access your code).
 2. Make sure to push any changes made--anything you see online is what we will also see.
 
-
+// Here are some notes
