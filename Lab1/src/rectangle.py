@@ -6,12 +6,30 @@
  so a default one will be created for us.
 """
 class Rectangle:
-    def set_values(self, x, y):
-        self.width = x
-        self.height = y
+    # constructor with private variables, both default to 1
+    def __init__(self, width=1, height=1):
+        self._width = width
+        self._height = height
 
     def area(self):
-        return self.width * self.height
+        return self._width * self._height
+    
+    def set_values(self, x, y):
+        self._width = x
+        self._height = y
+
+    # setter and getter for values
+    def set_width(self, width):
+        self._width = width
+
+    def get_width(self, width):
+        return self._width
+
+    def set_height(self, height):
+        self._height = height
+
+    def get_height(self, height):
+        return self._height
 
 
 if __name__ == "__main__":
