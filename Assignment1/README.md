@@ -10,7 +10,7 @@
 - (Optional) What was your favorite part of the assignment?
   hands-on experience because I can see how my codes work and generate an application that I can interact with instantly.
 - (Optional) How would you improve the assignment?
-  No idea. But for the first learning course, it's not so clear how the codes finally generate to such a web page, the effect of each line/block of codes. I feel like I was thrown a bunch of codes and it magically works.
+  No idea. But for the first learning course, it's not so clear how the codes finally generate such a web page, such as the effect of each line/block of codes. I feel like I was thrown a bunch of codes and it magically works.
 
 # Implementation Logistics
 
