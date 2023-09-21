@@ -99,3 +99,12 @@ git pull origin main
 
 # For git pull <remote> <branch>. If no remote and branch are specified,
 it defaults to the remote and branch configured for the current branch.
+
+// delete branch locally
+git branch -d localBranchName
+* The -d option will delete the branch only if it has already been pushed and merged with the remote branch. Use -D instead if you want to force the branch to be deleted, even if it hasn't been pushed or merged yet.
+
+
+
+// delete branch remotely
+git push origin --delete remoteBranchName
