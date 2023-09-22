@@ -52,29 +52,3 @@ def dumps(obj, cls=YEncoder, *args, **kwargs):
 
 def loads(s, cls=YDecoder, *args, **kwargs):
     return json.loads(s, cls=cls, *args, **kwargs)
-
-
-# my_data = {
-#     "hey": complex(1, 2),
-#     "there": range(1, 10, 3),
-#     73: False,
-# }
-
-# # print("my_data: \n", my_data)
-
-# json_data = dumps(my_data)
-# decoded = loads(json_data)
-
-# print("json_data: \n",json_data)
-# print("decoded_json_data: \n", decoded)
-
-
-SAMPLE_COMPLEX = complex(5, 8)
-# SAMPLE_COMPLEX = {
-#     "Yijia": complex(1, 2),
-#     "Ma": range(1, 10, 3),
-#     6666: True,
-# }
-encoded_complex = dumps(SAMPLE_COMPLEX)
-
-print(encoded_complex)

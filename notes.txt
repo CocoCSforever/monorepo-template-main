@@ -108,3 +108,5 @@ git branch -d localBranchName
 
 // delete branch remotely
 git push origin --delete remoteBranchName
+
+git log --pretty="- %s" > CHANGELOG.md

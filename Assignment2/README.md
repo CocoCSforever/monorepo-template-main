@@ -2,11 +2,12 @@
 
 - Name: Yijia Ma
 - How many hours did it take you to complete this assignment?
-  15 hours
+  25 hours
 - Did you collaborate with any other students/TAs/Professors?
   No
 - Did you use any external resources? (Cite them below)
   - https://www.educative.io/answers/what-are-keyword-arguments-in-python
+  - https://www.freecodecamp.org/news/a-beginners-guide-to-git-what-is-a-changelog-and-how-to-generate-it/
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
