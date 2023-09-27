@@ -110,3 +110,7 @@ git branch -d localBranchName
 git push origin --delete remoteBranchName
 
 git log --pretty="- %s" > CHANGELOG.md
+
+python3.9 -m build
+
+git checkout -b newBranchName
