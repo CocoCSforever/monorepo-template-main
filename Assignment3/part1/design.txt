@@ -1,0 +1,38 @@
+Requirements:
+    1. quality: [0, 50]  Ex:sulfuras with 80
+    2. quality&sellin -- at the end of day. twice pass expire
+        - Aged Brie ++
+        - sulfuras ==
+        - backstage passes:
+            +1/day, +2/day(10 or less days remains), +3/day(5 or less remains), =0(after sellin)
+        - conjured: -2/day
+
+# assume the original state of items follows the rules, we won't check whether an item is valid or not
+
+test cases for normal items:   
+    1. [1, 5] ==> [0, 4] ==> [-1, 2]
+    2. [1, 1] ==> [0, 0] ==> [-1, 0]
+
+test cases for sulfuras:
+    1. [5, 80] ==> [5, 80]
+    2. [0, 80] ==> [0, 80]
+
+test cases for aged brie:
+    1. [5, 50] ==> [4, 50]
+    2. [3, 49] ==> [2, 50]
+    3. [0, 20] ==> [-1, 22]
+    4. [0, 49] ==> [-1, 50]
+
+test cases for backstage passes:
+    1. [5, 50] ==> [4, 50]
+    2. [11, 20] ==> [10, 21] ==> [9, 23] ==> [8, 25]
+    3. [5, 10] ==> [4, 13]
+    4. [11, 49] ==> [10, 50]
+    5. [5, 48] ==> [4, 50]
+    6. [0, 48] ==> [-1, 0]
+
+test cases for conjured:
+    1. [1, 7] ==> [0, 5] ==> [-1, 1]
+    2. [1, 1] ==> [0, 0]
+    3. [0, 1] ==> [-1, 0]
+    4. [10, 49] ==> [10, 47]
