@@ -114,3 +114,11 @@ git log --pretty="- %s" > CHANGELOG.md
 python3.9 -m build
 
 git checkout -b newBranchName
+
+HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
+
+# To see the list of all the available environments 
+conda info -e
+
+
+source /Users/mayijia/NEU/CS5500/py-sandbox/bin/activate

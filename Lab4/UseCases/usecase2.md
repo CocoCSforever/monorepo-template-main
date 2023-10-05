@@ -6,31 +6,45 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Draw in different colors*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *To allow users to draw in different colors by pressing the number keys 1 to 8*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *The program must be running and in a responsive state.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *(1) Pressing the number key 1 to draw in Black. (2) Pressing the number key 2 to draw in White. (3) Pressing the number key 3 to draw in Red. (4) Pressing the number key 4 to draw in Green. (5) Pressing the number key 5 to draw in Blue. (6) Pressing the number key 6 to draw in Yellow. (7) Pressing the number key 7 to draw in Magenta. (8) Pressing the number key 8 to draw in Cyan.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario 1**: *A user will press the number key 1 when they want to draw in Black.*
+
+**Scenario 2**: *A user will press the number key 2 when they want to draw in White.*
+
+**Scenario 3**: *A user will press the number key 3 when they want to draw in Red.*
+
+**Scenario 4**: *A user will press the number key 4 when they want to draw in Green.*
+
+**Scenario 5**: *A user will press the number key 5 when they want to draw in Blue.*
+
+**Scenario 6**: *A user will press the number key 6 when they want to draw in Yellow.*
+
+**Scenario 7**: *A user will press the number key 7 when they want to draw in Magenta.*
+
+**Scenario 8**: *A user will press the number key 8 when they want to draw in Cyan.*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *The program may become potentially unresponsive. In this case, the program can be terminated by built-in termination actions(See Use Case 5) or from the operating system.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *High-priority*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *First release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor communicates through I/O devices-the keyboard. The system is responsible for changing the drawing colors when the user presses, and should respond within 1 second of any keyboard event. The user is responsible for all other input.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *N/A*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *We may need to support more color choices in the future: (1) add a color section in the titlebar which allows user to choose a color based on RGB values ranging from 0 to 255.*
 
 <hr>
 
