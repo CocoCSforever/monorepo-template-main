@@ -53,10 +53,11 @@ def api_post(new_book=Body()):
 @app.put("/books/update_book/")
 # curl -X PUT 'http://127.0.0.1:8000/books/update_book/?author=Ma' -d '{"title": "An", "author": "Nassam talib", "category": "non-fiction"}'
 # for reference: https://fastapi.tiangolo.com/tutorial/body/
-def api_put(new_book= Body(), author: str | None = None):
+def api_put(new_book= Body(..., embed=True), author: str | None = None):
     new_book = json.loads(new_book)
     result = {**new_book, "author": author}
     # result = json.dumps(result, ensure_ascii=False)
+    # return {"msg": new_book}
     return {"msg": result}
 
 

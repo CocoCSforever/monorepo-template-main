@@ -122,3 +122,26 @@ conda info -e
 
 
 source /Users/mayijia/NEU/CS5500/py-sandbox/bin/activate
+
+(base) mayijia@Macintosh-3 ~ % Python --version
+Python 3.9.13
+(base) mayijia@Macintosh-3 ~ % which python
+/Users/mayijia/opt/anaconda3/bin/python
+(base) mayijia@Macintosh-3 ~ % pip list
+Package                       Version
+----------------------------- --------------------
+
+# To see the list of all the available environments 
+conda info -e
+
+python3 -m venv py310
+source py310/bin/activate
+deactivate
+
+
+pip install fastapi "uvicorn[standard]"
+pip install pytest-cov pytest
+mkdir src
+mkdir tests
+cd src
+uvicorn main:app --reload
