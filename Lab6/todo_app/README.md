@@ -1,25 +1,22 @@
-Use fastapi as framework, Uvicorn as web server
+Use fastapi as framework, Uvicorn as web server  
 
-pip install fastapi "uvicorn[standard]"
-pip install pytest-cov pytest
-mkdir src
-mkdir tests
-cd src
-uvicorn main:app --reload
+`pip install fastapi "uvicorn[standard]"`  
+`pip install pytest-cov pytest`  
+`mkdir src`  
+`mkdir tests`  
+`cd src`  
+`uvicorn main:app --reload`
 
+To run pytest coverage, please locate at todo_app directory and run: `pytest --cov=src tests/`  
 
-pytest --cov=src tests/
-pytest --cov=src test_main.py
+Within tests folder, run(may encounter "cannot find module"): `pytest --cov=src test_main.py`  
 
-python3 -m venv venv
-source venv/bin/activate
+create virtual environment: `python3 -m venv venv`  
+activate virtual environment: `source venv/bin/activate`  
 
-pytest -s
-deactivate
+print out info when running pytest:`pytest -s`  
 
-To run pytest coverage, please locate at todo_app directory and run:
-pytest --cov=src tests/
-
+deactivate virtual environment: `deactivate`  
 
 
 <!-- Notes for reference -->
