@@ -78,6 +78,9 @@ git push
 git checkout current-branch-name
 git branch -m new-branch-name
 
+# create and switch to a new branch
+git checkout -b newBranchName
+
 # if I want branch b updated with lateset version of main
 # Switch to main and update it
 git checkout main
@@ -112,8 +115,6 @@ git push origin --delete remoteBranchName
 git log --pretty="- %s" > CHANGELOG.md
 
 python3.9 -m build
-
-git checkout -b newBranchName
 
 HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
 
