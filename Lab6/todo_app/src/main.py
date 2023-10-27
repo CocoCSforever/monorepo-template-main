@@ -24,11 +24,11 @@ def api_get_query(title: str):
 @app.get("/books/{title}/authors/")
 # curl 'http://127.0.0.1:8000/books/The%20Sun%20Also%20Rises/authors/?author=ma'
 def api_get_path_and_query(title: str, author: str | None = None):
-    return {"msg": "title: " + title + ", author: " + author}
+    return {"msg": "title: " + title + ", author: " + str(author)}
 
 
 @app.post("/books/create_book")
-# curl 'http://127.0.0.1:8000/books/create_book' -d '{"title": "An", "author": "Nassam talib", "category": "non-fiction"}'
+# curl 'http://127.0.0.1:8000/books/create_book' -H 'Content-Type: application/json' -d '{"title": "An", "author": "Nassam talib", "category": "non-fiction"}'
 # -X POST is optional, curl assumes a POST request when you provide data with the -d option.
 # -d: requests with -d or have a body/data are considered post requests
 def api_post(new_book=Body()):
@@ -54,7 +54,8 @@ def api_post(new_book=Body()):
 # curl -X PUT 'http://127.0.0.1:8000/books/update_book/?author=Ma' -d '{"title": "An", "author": "Nassam talib", "category": "non-fiction"}'
 # for reference: https://fastapi.tiangolo.com/tutorial/body/
 def api_put(new_book= Body(..., embed=True), author: str | None = None):
-    new_book = json.loads(new_book)
+    # if new_book is defaulted to bytes object, convert it to dict
+    # new_book = json.loads(new_book)
     result = {**new_book, "author": author}
     # result = json.dumps(result, ensure_ascii=False)
     # return {"msg": new_book}
